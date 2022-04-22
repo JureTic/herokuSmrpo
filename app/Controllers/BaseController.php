@@ -117,6 +117,7 @@ class BaseController extends Controller
                 foreach ($naloge as $naloga){
                     if(isset($naloge[$indexnaloge]['clan_ekipe'])){
                         $naloge[$indexnaloge]['clan_ekipe_name'] = ($modelusers->find($naloge[$indexnaloge]['clan_ekipe']))['username'];
+
                     }
                     $indexnaloge = $indexnaloge +1;
                 }
